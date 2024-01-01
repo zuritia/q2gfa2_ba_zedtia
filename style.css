@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url(media/star\ bg.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+main h1{
+    color: white;
+    position: static;
+    text-align: center;
+    margin-top: 20vh;
+    text-shadow: 3px 3px black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.heavenlyb{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 90;
+}
+
+.heavenlyb2{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 90;
+}
+
+#saturn{
+    background-image: url(media/saturn.gif);
+    width: 512px;
+    height: 512px;
+    position: absolute;
+    transform: translate(-80px, 0px);
+}
+
+#dryterran{
+    background-image: url(media/dry\ terran.gif);
+    width: 256px;
+    height: 256px;
+    animation: dryterranmotion 60s linear infinite;
+}
+
+@keyframes terranmotion {
+    0%{transform: translate(-400px, 0px);}
+    50% {transform: translate(2400px, 400px);}
+    100% {transform: translate(-2400px, -400px); z-index: 91;}
+}
+
+#star{
+    background-image: url(media/star.gif);
+    width: 200px;
+    height: 200px;
+    animation: starmotion 10s linear infinite;
+}
+
+@keyframes starmotion {
+    0%{transform: translate(2400px, -400px); z-index: 89;}
+    50% {transform: translate(-2400px, 800px);}
+    100% {transform: translate(2400px, -400px); z-index: 93;}
+}
+
+#galaxy{
+    background-image: url(media/galaxy.gif);
+    width: 200px;
+    height: 200px;
+    animation: galaxymotion 600s infinite;
+}
+
+@keyframes RIMmotion {
+    0%{transform: scale(0.01); z-index: 88;}
+    100% {transform: scale(1); z-index: 88;}
+}
+
